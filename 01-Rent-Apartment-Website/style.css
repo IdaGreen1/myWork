@@ -10,6 +10,9 @@ body{
     color: lavender;
 }
 
+#galerry{
+    background-image: url(../01-Rent-Apartment-Website/Media/apartment\ entry.jpg) }
+
 header{
     padding-left: 100px;
   
