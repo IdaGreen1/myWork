@@ -1,0 +1,46 @@
+@mixin breakpoint ($point) {
+    @if $point == mama-bear {
+        @media (max-width: 1250px) {@content;} 
+    }
+
+    @if $point == baby-bear {
+        @media (max-width: 800px) {@content;}
+    }
+
+    @if $point == reverse-baby-bear {
+        @media (min-width: 800px) {@content;}
+    }
+
+    @if $point == reverse-mama-bear {
+        @media (min-width: 1250px) {@content;}
+    } 
+}
+
+@mixin important-text {
+    font-family: $serif-font;
+    font-size: 2em;
+    color: $intensive-color;
+}
+
+@mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+@mixin linx($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    text-decoration: none;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}

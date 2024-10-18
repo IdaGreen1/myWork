@@ -1,0 +1,32 @@
+@import './abstracts/mixin' ;
+@import './abstracts/variables';
+@import './base/typhography';
+@import './page/dark-mode-theme';
+@import './page/light-mode-theme';
+
+body {
+    background-color: $beige;
+    box-sizing: border-box;
+}
+.header {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: $sans-serif;
+    font-size: $font-size-h1;
+    color: $pink;
+    width: 100%;
+    height: 25%;
+    border: 1em, solid, $grey;
+    margin: 1em;
+    padding: 1em;
+    background-color: $blue;
+
+}
+
+h2 {
+
+    font-family: $serif;
+    font-size: $font-size-h2;
+    color: $blue;
+    
+}
